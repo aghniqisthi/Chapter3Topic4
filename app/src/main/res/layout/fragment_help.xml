@@ -6,10 +6,15 @@
     tools:context=".Tugas1.HelpFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:id="@+id/btnBack"
-        android:text="Button Back To Login From Help"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_centerInParent="true"
+            android:id="@+id/btnBack"
+            android:text="Button Back To Login From Help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 
 </FrameLayout>
