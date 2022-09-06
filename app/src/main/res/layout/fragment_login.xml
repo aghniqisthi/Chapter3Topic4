@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tugas1.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnKeHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Button Home"
+            android:layout_marginVertical="25dp" />
+
+        <Button
+            android:id="@+id/btnKeHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Help" />
+
+        <Button
+            android:id="@+id/btnKeChatCs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="25dp"
+            android:text="Button Chat CS" />
+
+        <Button
+            android:id="@+id/btnKeLupaPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Lupa Password" />
+
+        <Button
+            android:id="@+id/btnKeRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="25dp"
+            android:text="Button Register" />
+    </LinearLayout>
+
+</FrameLayout>

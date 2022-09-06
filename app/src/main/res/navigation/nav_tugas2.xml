@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_tugas2"
+    app:startDestination="@id/loginFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.chapter3topic4.Tugas2.HomeFragment"
+        android:label="fragment_home_2"
+        tools:layout="@layout/fragment_home_2" >
+        <action
+            android:id="@+id/action_homeFragment2_to_umurFragment"
+            app:destination="@id/umurFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.chapter3topic4.Tugas2.LoginFragment"
+        android:label="fragment_login_2"
+        tools:layout="@layout/fragment_login_2" >
+        <action
+            android:id="@+id/action_loginFragment2_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_loginFragment2_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.chapter3topic4.Tugas2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="nama"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.example.chapter3topic4.Tugas2.RegisterFragment"
+        android:label="fragment_register_2"
+        tools:layout="@layout/fragment_register_2" >
+        <action
+            android:id="@+id/action_registerFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/umurFragment"
+        android:name="com.example.chapter3topic4.Tugas2.UmurFragment"
+        android:label="fragment_umur"
+        tools:layout="@layout/fragment_umur" >
+        <argument
+            android:name="nama"
+            app:argType="string" />
+    </fragment>
+</navigation>
